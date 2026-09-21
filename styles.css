@@ -1,0 +1,27 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #faf7f2;
+  color: #20262d;
+  font-family: system-ui, sans-serif;
+  line-height: 1.65;
+}
+
+main { width: min(960px, 90%); margin: 48px auto; }
+p { margin: 0 0 32px; font-size: 18px; }
+
+.imagenes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 20px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 6px;
+}
